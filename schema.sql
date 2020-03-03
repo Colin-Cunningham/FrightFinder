@@ -14,8 +14,8 @@ CREATE TABLE spooky_spaces
     location varchar(50) NOT NULL,
     state varchar(25) NOT NULL,
     state_ab varchar(2) NOT NULL,
-    lat DECIMAL(14, 14) NOT NULL,
-    long DECIMAL(14, 14) NOT NULL,
+    cur_lat DECIMAL(14, 14) NOT NULL,
+    cur_long DECIMAL(14, 14) NOT NULL,
     city_lat DECIMAL(14, 14) NOT NULL,
     city_long DECIMAL(14, 14) NOT NULL,
 	PRIMARY KEY (id)
