@@ -1,7 +1,7 @@
 -- Creating the Database
 DROP DATABASE IF EXISTS spooky_spots;
 CREATE DATABASE spooky_spots;
-USE DATABASE spooky_spots;
+USE spooky_spots;
 
 -- Creating Spooks Table
 
@@ -14,10 +14,11 @@ CREATE TABLE spooky_spaces
     location varchar(50) NOT NULL,
     state varchar(25) NOT NULL,
     state_ab varchar(2) NOT NULL,
-    cur_lat DECIMAL(14, 14) NOT NULL,
-    cur_long DECIMAL(14, 14) NOT NULL,
-    city_lat DECIMAL(14, 14) NOT NULL,
-    city_long DECIMAL(14, 14) NOT NULL,
+    cur_lat DECIMAL(11, 7) NOT NULL,
+	cur_long DECIMAL(11, 7) NOT NULL,
+    city_lat DECIMAL(11, 7) NOT NULL,
+    city_long DECIMAL(11, 7) NOT NULL,
+    ranking INTEGER,
 	PRIMARY KEY (id)
 );
 
