@@ -1,7 +1,7 @@
 -- Creating the Database
 DROP DATABASE IF EXISTS spooky_spots;
 CREATE DATABASE spooky_spots;
-USE DATABASE spooky_spots;
+USE spooky_spots;
 
 -- Creating Spooks Table
 
