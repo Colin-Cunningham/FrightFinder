@@ -1,0 +1,101 @@
+body {
+    background-image: url("./images/background_gif.gif");
+    background-size: 1450px;
+    background-position: top center !important;
+    background-position: center center;
+    height: 2000px;
+    background-repeat: no-repeat;
+    background-color: black;
+    align-items: center;
+}  
+.navbar-header {
+    /* font-family: 'Trade Winds', cursive;
+    font-family: 'Lacquer', sans-serif;
+    font-family: 'Indie Flower', cursive;
+    font-family: 'Fjalla One', sans-serif;
+    font-family: 'Shadows Into Light', cursive;
+    font-family: 'Righteous', cursive;
+    font-family: 'Amatic SC', cursive;
+    font-family: 'Caveat', cursive;
+    font-family: 'Patrick Hand', cursive;
+    font-family: 'Gloria Hallelujah', cursive;
+    font-family: 'BenchNine', sans-serif;
+    font-family: 'Special Elite', cursive;
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Homemade Apple', cursive;
+    font-family: 'Rock Salt', cursive;
+    font-family: 'Knewave', cursive;
+    font-family: 'Love Ya Like A Sister', cursive;*/
+    font-family: 'Permanent Marker', cursive;
+    color: white;
+    
+} 
+.navbar.navbar-default {
+    background-color: transparent;
+    border-color: transparent;
+}
+.navbar-default .navbar-brand {
+    color: white;
+    font-size: large;
+}
+
+.i.icon.video.play:before {
+    padding-left: 1080px;
+    color: white;
+    content: "\f144";
+}
+
+.ui.secondary.menu .item {
+    padding-top: 25px;
+    color: white;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.ui.secondary.menu {
+    padding:15px;
+    font-size: 17px;
+}
+.responsive {
+    width: 93%;
+    height: auto;
+ }
+ i.icon:before {
+    color: aliceblue;
+  }
+
+#fireplace{
+    padding-top: 1000px;
+    width: 120%;
+    height: 93%;
+
+}
+@media screen and (min-width: 768px) {
+     /* For mobile phones: */
+    .body {
+      width: 100%;
+    } 
+  } 
+
+  @media screen and (max-width: 768px) {
+    /* For mobile phones: */
+   img {
+    width: 7.108in;
+    height: 2in;
+    align-items: center;
+   } 
+}
+@media screen and (max-width: 768px) {
+    /* For mobile phones: */
+   #fireplace {
+    padding-top: 800px;
+    width:120%
+   } 
+}
+  /* @font-face {
+    font-family: 'pantano_thingregular';
+    src: url('pantano_thing-webfont.woff2') format('woff2'),
+         url('pantano_thing-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+} */
