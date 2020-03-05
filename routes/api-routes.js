@@ -48,16 +48,16 @@ module.exports = function(app) {
       res.json(dbSpooky);
     });
   });
-  app.get("/api/current", function(req, res) {
+  app.get("/api/current/:lat/:long", function(req, res) {
     // findAll returns all entries for a table when used with no options
     db.Spooky_spaces.findAll({
       where: {
-        city: "atlanta"
+        [Op.and]: [{ cur_lat: req.params.lat }, { cur_long: req.params.long }],  
       }
     }).then(function(dbSpooky) {
       // We have access to the todos as an argument inside of the callback function
-      console.log(dbSpooky[0].dataValues.id);
-      res.json(dbSpooky[0].dataValues.id);
+      console.log(dbSpooky);
+      res.json(dbSpooky);
     });
   });
 
