@@ -102,3 +102,18 @@ body {
     font-style: normal;
 
 } */
+
+
+#dataContainer{
+    margin: 0 auto;
+    width: 33%;
+    margin-top: 40rem;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+#header{
+    font-family: 'Love Ya Like A Sister', cursive;
+    color: whitesmoke;
+    text-align: center;
+    font-weight: 800;
+}

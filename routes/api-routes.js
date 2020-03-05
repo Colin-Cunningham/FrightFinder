@@ -36,23 +36,35 @@ module.exports = function(app) {
     res.redirect("/");
   });
 
-  app.get("/api/current", function(req, res) {
+  app.get("/api/choose/:city", function(req, res) {
     // findAll returns all entries for a table when used with no options
-    db.SpookySpaces.findAll({
+    console.log(req.params);
+    db.Spooky_spaces.findAll({
       where: {
-        city: res.location
+        city: req.params.city
       }
     }).then(function(dbSpooky) {
       // We have access to the todos as an argument inside of the callback function
       res.json(dbSpooky);
     });
   });
+  app.get("/api/current", function(req, res) {
+    // findAll returns all entries for a table when used with no options
+    db.Spooky_spaces.findAll({
+      where: {
+        city: "atlanta"
+      }
+    }).then(function(dbSpooky) {
+      // We have access to the todos as an argument inside of the callback function
+      console.log(dbSpooky[0].dataValues.id);
+      res.json(dbSpooky[0].dataValues.id);
+    });
+  });
 
   // Route for getting some data about our user to be used client side
   app.get("/api/user_data", function(req, res) {
     if (!req.user) {
-      // The user is not logged in, send back an empty object
-      res.json({});
+      console.log("not logged in");
     } else {
       // Otherwise send back the user's email and id
       // Sending back a password, even a hashed password, isn't a good idea
