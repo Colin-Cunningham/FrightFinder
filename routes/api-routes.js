@@ -36,6 +36,18 @@ module.exports = function(app) {
     res.redirect("/");
   });
 
+  app.get("/api/current", function(req, res) {
+    // findAll returns all entries for a table when used with no options
+    db.SpookySpaces.findAll({
+      where: {
+        city: res.location
+      }
+    }).then(function(dbSpooky) {
+      // We have access to the todos as an argument inside of the callback function
+      res.json(dbSpooky);
+    });
+  });
+
   // Route for getting some data about our user to be used client side
   app.get("/api/user_data", function(req, res) {
     if (!req.user) {
