@@ -11,6 +11,9 @@ module.exports = function(sequelize, DataTypes) {
     city_lat: DataTypes.DECIMAL,
     city_long: DataTypes.DECIMAL,
     rating: DataTypes.INTEGER
+  },
+  {
+    timestamps: false,
   });
   return SpookySpaces;
 };
