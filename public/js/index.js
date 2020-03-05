@@ -27,7 +27,7 @@ $(document).ready(function() {
       dataContainer.empty();
       for (var i = 0; i < response.length; i++) {
         dataContainer.append(`<p id="name" style="color: white">${response[i].location}</p> \n 
-        <p id="desc" class="hide" style="color:white">${response[i].description} </p> `);
+        <p id="desc" style="color:white">${response[i].description} </p> `);
       }
     });
   }
