@@ -1,7 +1,7 @@
 // Requiring our models and passport as we've configured it
 var db = require("../models");
 var passport = require("../config/passport");
-
+var Sequelize = require("sequelize");
 module.exports = function(app) {
   // Using the passport.authenticate middleware with our local strategy.
   // If the user has valid login credentials, send them to the members page.
@@ -35,10 +35,20 @@ module.exports = function(app) {
     req.logout();
     res.redirect("/");
   });
+  
+  app.get("/api/random/:id", function(req, res) {
+    db.Spooky_spaces.findAll({
+      where: {
+        id: req.params.id
+      }
+    }).then(function(dbSpooky) {
+      // We have access to the todos as an argument inside of the callback function
+      res.json(dbSpooky);
+    });
+  });
 
   app.get("/api/choose/:city", function(req, res) {
     // findAll returns all entries for a table when used with no options
-    console.log(req.params);
     db.Spooky_spaces.findAll({
       where: {
         city: req.params.city
@@ -51,9 +61,9 @@ module.exports = function(app) {
   app.get("/api/current/:lat/:long", function(req, res) {
     // findAll returns all entries for a table when used with no options
     db.Spooky_spaces.findAll({
-      where: {
-        [Op.and]: [{ cur_lat: req.params.lat }, { cur_long: req.params.long }],  
-      }
+      where: Sequelize.and(
+        { city_lat: req.params.lat }, { city_long: req.params.long },  
+    )
     }).then(function(dbSpooky) {
       // We have access to the todos as an argument inside of the callback function
       console.log(dbSpooky);
