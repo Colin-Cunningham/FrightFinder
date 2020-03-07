@@ -3,7 +3,12 @@ $(document).ready(function() {
   $(document).on("click", "#current", currenLoc);
   $(document).on("click", "#random", randomLoc);
   $(document).on("click", "#name", fixClass);
-  
+});
+
+function myFunction(x) {
+  x.classList.toggle("fa-thumbs-down");
+};
+
   function getLocation() {
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(showPosition);
@@ -50,4 +55,4 @@ $(document).ready(function() {
     console.log("coolio");
   }
  
-});
+;

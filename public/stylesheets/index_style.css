@@ -30,6 +30,16 @@ body {
     color: white;
     
 } 
+.fa {
+    font-size: 50px;
+    cursor: pointer;
+    user-select: none;
+    color: orange;
+  }
+  
+  .fa:hover {
+    color: white;
+  }
 .navbar.navbar-default {
     background-color: transparent;
     border-color: transparent;

@@ -4,15 +4,18 @@
         <title>Passport Authentication</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/lumen/bootstrap.min.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
         <link src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
         crossorigin="anonymous">
+        <!-- Add icon library -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Bebas+Neue|BenchNine|Caveat|Fjalla+One|Gloria+Hallelujah|Homemade+Apple|Indie+Flower|Knewave|Lacquer|Love+Ya+Like+A+Sister|Patrick+Hand|Permanent+Marker|Righteous|Rock+Salt|Shadows+Into+Light|Special+Elite|Trade+Winds&display=swap" rel="stylesheet">
         <link href="stylesheets/index_style.css" rel="stylesheet">
+        <script src="js/rater.js"></script>
     </head>
 <body>
+
   <div class="ui secondary  menu">
     <a class="item" href="index.html">
       Home
@@ -38,6 +41,8 @@
         <input id="input" type="text" placeholder="Search...">
         <button id="choose" class="ui button">Search</button>
       </div>
+
+      </select>      
       <div class="ui button" tabindex="0" id="current">
         Current
       </div>
@@ -45,7 +50,8 @@
         Random
       </button>
     </div>
-    
+    <i onclick="myFunction(this)" class="fa fa-thumbs-up"></i>
+
     <h1 id="header">Your Scare Awaits</h1>
     <div id="dataContainer" class="">
       <div id="col2" class="column">
@@ -59,7 +65,7 @@
               <h2><span class="member-name"></span></h2>
             </div>
           </div>
-        </p>
+        </p>  
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
