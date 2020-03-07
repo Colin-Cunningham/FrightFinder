@@ -29,7 +29,11 @@
       <a class="ui item" href="index.html">
         Logout
       </a>
-      <i class="play icon"></i>
+      <audio id="myAudio">
+        <source src="./stylesheets/audio/spookyaudio.mp3" type="audio/mpeg">
+      </audio>
+      <i onclick="playAudio()" type="button" class="play icon"></i>
+      <i onclick="pauseAudio()" type="button" class="pause icon"></i>
     </div>
   </div>
       <img src="./stylesheets/images/title-02-02.png" alt="FrightFinder" class="responsive">

@@ -70,8 +70,14 @@ body {
 
 }
 .centerbuttons {
-    padding-left: 400px;
-}
+    text-align: center;
+    padding-right: 100px;
+  }
+  .ui.button {
+    font-family: 'Love Ya Like A Sister', cursive;
+    background-color: rgb(10, 10, 32);
+    color: aliceblue;
+  }
 @media screen and (min-width: 768px) {
      /* For mobile phones: */
     .body {
@@ -94,15 +100,12 @@ body {
     width:120%
    } 
 }
-  /* @font-face {
-    font-family: 'pantano_thingregular';
-    src: url('pantano_thing-webfont.woff2') format('woff2'),
-         url('pantano_thing-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-} */
-
+@media screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .centerbuttons {
+      padding-right: 35px;
+    }
+  }
 
 #dataContainer{
     margin: 0 auto;

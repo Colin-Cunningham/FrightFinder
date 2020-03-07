@@ -53,3 +53,12 @@ $(document).ready(function() {
     console.log("coolio");
   }
 });
+var x = document.getElementById("myAudio");
+
+function playAudio() {
+  x.play();
+}
+
+function pauseAudio() {
+  x.pause();
+}
