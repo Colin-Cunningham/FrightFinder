@@ -6,10 +6,10 @@ module.exports = function(sequelize, DataTypes) {
     location: DataTypes.STRING,
     state: DataTypes.STRING,
     state_ab: DataTypes.STRING,
-    cur_lat: DataTypes.DECIMAL,
-    cur_long: DataTypes.DECIMAL,
-    city_lat: DataTypes.DECIMAL,
-    city_long: DataTypes.DECIMAL,
+    cur_lat: DataTypes.DECIMAL(10,6),
+    cur_long: DataTypes.DECIMAL(10,6),
+    city_lat: DataTypes.DECIMAL(10,2),
+    city_long: DataTypes.DECIMAL(10,1),
     rating: DataTypes.INTEGER
   },
   {
