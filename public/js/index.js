@@ -1,4 +1,3 @@
-
 const currentLocation = [];
 
 $(document).ready(function() {
@@ -12,6 +11,7 @@ $(document).ready(function() {
       currentLocation.length = 0
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(showPosition);
+      console.log("got COoords")
     } else {
       console.log("Geolocation is not supported by this browser.");
     }
@@ -73,7 +73,7 @@ $(document).ready(function() {
       dataContainer.empty();
       for (var i = 0; i < response.length; i++) {
         var latlon = response[i].cur_lat + "," + response[i].cur_long;
-        var apiKey = ""
+        var apiKey = yellow
         var img_url = "https://maps.googleapis.com/maps/api/streetview?size=600x300&location="+latlon+"&key="+ apiKey;
         dataContainer.append(`<a class="name"><p class="scare" id="${response[i].id}" style="color: white">${response[i].location}</p></a>
         <p style="color: white">${response[i].description}</p><img src="${img_url}">`);
