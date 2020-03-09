@@ -6,12 +6,12 @@ $(document).ready(function() {
   $(document).on("click", "#choose", chooseLoc);
   $(document).on("click", "#random", randomLoc);
   $(document).on("click", ".name", clickEvent);
-  $(document).on("click", "#name", fixClass);
   $(document).on("click", "#thumbRating", thumbs);
+ 
+ 
 
-
-function thumbs(x) {
-  x.classList.toggle("fa-thumbs-down");
+function thumbs() {
+    $( "#thumbRating" ).toggleClass( "fa-thumbs-down" )
 }
 
 function getLocation() {
@@ -121,9 +121,9 @@ function currenLoc() {
       dataContainer.empty();
       for (var i = 0; i < response.length; i++) {
         var latlon = response[i].cur_lat + "," + response[i].cur_long;
-        var apiKey = yellow
+        var apiKey = "AIzaSyAH6XIzkCiAt0U8l0llfWf2QSOcE0oHAx4"
         var img_url = "https://maps.googleapis.com/maps/api/streetview?size=600x300&location="+latlon+"&key="+ apiKey;
-        dataContainer.append(`<a class="name"><p class="scare" id="${response[i].id}" style="color: white">${response[i].location}</p></a>
+        dataContainer.append(`<a class="name"><p class="scare" id="${response[i].id}" style="color: white">${response[i].location}</p></a>  <i id="thumbRating" class="fa fa-thumbs-up"></i>
         <p style="color: white">${response[i].description}</p><img src="${img_url}">`);
       }
     });
