@@ -52,7 +52,7 @@ module.exports = function(app) {
     // findAll returns all entries for a table when used with no options
     db.Spooky_spaces.findAll({
       where: {
-        [Op.and]: [{ cur_lat: req.params.lat }, { cur_long: req.params.long }],  
+        [Op.and]: [{ cur_lat: req.params.lat }, { cur_long: req.params.long }]
       }
     }).then(function(dbSpooky) {
       // We have access to the todos as an argument inside of the callback function

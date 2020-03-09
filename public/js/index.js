@@ -1,11 +1,12 @@
-$(document).ready(function () {
+$(document).ready(function() {
   $(document).on("click", "#choose", chooseLoc);
   $(document).on("click", "#current", currenLoc);
   $(document).on("click", "#random", randomLoc);
   $(document).on("click", "#name", fixClass);
+  $(document).on("click", "#thumbRating", thumbs);
 });
 
-function myFunction(x) {
+function thumbs(x) {
   x.classList.toggle("fa-thumbs-down");
 }
 
@@ -27,11 +28,11 @@ function chooseLoc() {
     .trim();
   $.ajax("/api/choose/" + city, {
     type: "GET"
-  }).then(function (response) {
+  }).then(function(response) {
     var dataContainer = $("#col2");
     dataContainer.empty();
     for (var i = 0; i < response.length; i++) {
-      dataContainer.append(`<p id="name" style="color: white">${response[i].location}</p> \n 
+      dataContainer.append(`<p id="name" style="color: white">${response[i].location}</p>\n 
         <p id="desc" style="color:white">${response[i].description} </p> `);
     }
   });
@@ -41,7 +42,7 @@ function currenLoc() {
 
   $.get("/api/current/" + lat + "/" + long, {
     type: "GET"
-  }).then(function (response) {
+  }).then(function(response) {
     var dataContainer = $("#col2");
     dataContainer.empty();
     for (var i = 0; i < response.length; i++) {
@@ -53,4 +54,4 @@ function currenLoc() {
 function fixClass() {
   $("#desc").toggleClass("hide");
   console.log("coolio");
-};
+}
