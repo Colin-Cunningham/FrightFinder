@@ -1,64 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <title>Fright Finder!</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/lumen/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Amatic+SC|Bebas+Neue|BenchNine|Caveat|Fjalla+One|Gloria+Hallelujah|Homemade+Apple|Indie+Flower|Knewave|Lacquer|Love+Ya+Like+A+Sister|Patrick+Hand|Permanent+Marker|Righteous|Rock+Salt|Shadows+Into+Light|Special+Elite|Trade+Winds&display=swap"
+      rel="stylesheet"
+    />
+    <link href="stylesheets/style.css" rel="stylesheet" />
+  </head>
 
-<head>
-  <title>Passport Authentication</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/lumen/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Bebas+Neue|BenchNine|Caveat|Fjalla+One|Gloria+Hallelujah|Homemade+Apple|Indie+Flower|Knewave|Lacquer|Love+Ya+Like+A+Sister|Patrick+Hand|Permanent+Marker|Righteous|Rock+Salt|Shadows+Into+Light|Special+Elite|Trade+Winds&display=swap" rel="stylesheet">
-  <link href="stylesheets/style.css" rel="stylesheet">
-</head>
-
-<body>
-  <div class="ui secondary  menu">
-    <a class="item" href="index.html">
-      Home
-    </a>
-    <div class="right menu">
-      <div class="item">
-      </div>
-      <a class="item" href="login.html">
-        Log-in
+  <body>
+    <div class="ui secondary  menu">
+      <a class="item" href="index.html">
+        Home
       </a>
-      <a class="item" href="signup.html">
-        Sign-up
-      </a>
-      <a class="ui item" href="index.html">
-        Logout
-      </a>
-    </div>
-  </div>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6 col-md-offset-3">
-        <h2>Sign Up Form</h2>
-        <form class="signup">
-          <div class="form-group">
-            <label for="exampleInputEmail1">Email address</label>
-            <input type="email" class="form-control" id="email-input" placeholder="Email">
-          </div>
-          <div class="form-group">
-            <label for="exampleInputPassword1">Password</label>
-            <input type="password" class="form-control" id="password-input" placeholder="Password">
-          </div>
-          <div style="display: none" id="alert" class="alert alert-danger" role="alert">
-            <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
-            <span class="sr-only">Error:</span> <span class="msg"></span>
-          </div>
-          <button type="submit" class="btn btn-default">Sign Up</button>
-        </form>
-        <br />
-        <p>Or log in <a href="login.html">here</a></p>
+      <div class="right menu">
+        <div class="item"></div>
+        <a class="item" href="login.html">
+          Log-in
+        </a>
+        <a class="item" href="signup.html">
+          Sign-up
+        </a>
+        <a class="ui item" href="index.html">
+          Logout
+        </a>
       </div>
     </div>
-  </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+          <h2>Sign Up Form</h2>
+          <form class="signup">
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email-input"
+                placeholder="Email"
+              />
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input
+                type="password"
+                class="form-control"
+                id="password-input"
+                placeholder="Password"
+              />
+            </div>
+            <div
+              style="display: none"
+              id="alert"
+              class="alert alert-danger"
+              role="alert"
+            >
+              <span
+                class="glyphicon glyphicon-exclamation-sign"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Error:</span> <span class="msg"></span>
+            </div>
+            <button type="submit" class="btn btn-default">Sign Up</button>
+          </form>
+          <br />
+          <p>Or log in <a href="login.html">here</a></p>
+        </div>
+      </div>
+    </div>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
-  <script type="text/javascript" src="js/signup.js"></script>
-
-</body>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+    <script type="text/javascript" src="js/signup.js"></script>
+  </body>
 </html>

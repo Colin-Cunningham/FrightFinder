@@ -61,9 +61,11 @@ module.exports = function(app) {
   app.get("/api/current/:lat/:long", function(req, res) {
     // findAll returns all entries for a table when used with no options
     db.Spooky_spaces.findAll({
+
       where: Sequelize.and(
         { city_lat: req.params.lat }, { city_long: req.params.long },  
     )
+
     }).then(function(dbSpooky) {
       // We have access to the todos as an argument inside of the callback function
       console.log(dbSpooky);
