@@ -124,6 +124,7 @@ $(document).ready(function() {
       dataContainer.empty();
       for (var i = 0; i < response.length; i++) {
         var latlon = response[i].cur_lat + "," + response[i].cur_long;
+<<<<<<< HEAD
         var apiKey = "AIzaSyAH6XIzkCiAt0U8l0llfWf2QSOcE0oHAx4";
         var img_url =
           "https://maps.googleapis.com/maps/api/streetview?size=600x300&location=" +
@@ -132,6 +133,12 @@ $(document).ready(function() {
           apiKey;
         dataContainer.append(`<a class="name"><p class="scare" id="${response[i].id}" style="color: white">${response[i].location}</p></a>  <i id="thumbRating" class="fa fa-thumbs-up"></i>
         <p style="color: white">${response[i].description}</p><img src="${img_url}">`);
+=======
+        var apiKey = "AIzaSyAH6XIzkCiAt0U8l0llfWf2QSOcE0oHAx4"
+        var img_url = "https://maps.googleapis.com/maps/api/streetview?size=600x300&location="+latlon+"&key="+ apiKey;
+        dataContainer.append(`<a class="name"><p class="scare" id="${response[i].id}" style="color: white">${response[i].location}<i id="thumbRating" class="fa fa-thumbs-up"></i></p></a>  
+   <div class="ui raised segment"id="desc"><img class="ui large left floated image"id="image" src="${img_url}"><p style="">${response[i].description}</p></div>`);
+>>>>>>> c1155f2da15583ac90221cdc0d05925306acded5
       }
     });
   }

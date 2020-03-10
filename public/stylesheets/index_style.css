@@ -41,7 +41,7 @@ body {
   .fa:hover {
     color: white;
   }
-.navbar.navbar-default {
+  .navbar.navbar-default {
     background-color: transparent;
     border-color: transparent;
 }
@@ -49,19 +49,16 @@ body {
     color: white;
     font-size: large;
 }
-
 .i.icon.video.play:before {
     padding-left: 1080px;
     color: white;
     content: "\f144";
 }
-
 .ui.secondary.menu .item {
     padding-top: 25px;
     color: white;
     font-family: 'Permanent Marker', cursive;
 }
-
 .ui.secondary.menu {
     padding:15px;
     font-size: 17px;
@@ -75,14 +72,21 @@ body {
   }
 
 #fireplace{
-    padding-top: 1000px;
-    width: 120%;
-    height: 93%;
+    padding-top: 100px;
+    width: 100rem;
+    height: 73rem;
+}
 
-}
 .centerbuttons {
-    padding-left: 400px;
-}
+    margin: 0 auto;
+    text-align: center;
+    padding-right: 7.5rem ;
+  }
+  .ui.button {
+    font-family: 'Love Ya Like A Sister', cursive;
+    background-color: rgb(10, 10, 32);
+    color: aliceblue;
+  }
 @media screen and (min-width: 768px) {
      /* For mobile phones: */
     .body {
@@ -92,10 +96,10 @@ body {
 
   @media screen and (max-width: 768px) {
     /* For mobile phones: */
-   img {
+   #logo {
     width: 7.108in;
     height: 2in;
-    align-items: center;
+    margin: 0 auto;
    } 
 }
 @media screen and (max-width: 768px) {
@@ -117,8 +121,7 @@ body {
 
 #dataContainer{
     margin: 0 auto;
-    width: 33%;
-    margin-top: 40rem;
+
     font-family: 'Fjalla One', sans-serif;
 }
 
@@ -127,8 +130,32 @@ body {
     color: whitesmoke;
     text-align: center;
     font-weight: 800;
-}
+    padding-right: 7.5rem ;
 
+}
+#bigDiv{
+    margin-bottom: 30rem;
+}
 .hide{
     display: none;
+}
+#image{
+  
+}
+.scare{
+    font-size: 5.5rem;
+    text-align: center;
+    margin: 0 auto;
+    font-family: 'Gloria Hallelujah', cursive;
+    text-decoration: underline;
+    padding-bottom: 3rem;
+}
+
+#desc{
+width: 33%;
+margin: 0 auto;
+text-align: center;
+background-image: url("./images/red.jpg");
+background-size: cover;
+color: whitesmoke;
 }
