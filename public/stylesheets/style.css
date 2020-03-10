@@ -76,9 +76,9 @@ h2,p,label {
 
 @media screen and (max-width: 768px) {
   /* For mobile phones: */
- img {
+ #logo {
   width: 7.108in;
   height: 2in;
-  align-items: center;
+  margin: 0 auto;
  } 
 }
