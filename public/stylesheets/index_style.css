@@ -30,8 +30,6 @@ body {
     color: white;
     
 } 
-
-
 .fa {
     font-size: 50px;
     cursor: pointer;
@@ -72,7 +70,7 @@ body {
   }
 
 #fireplace{
-    padding-top: 100px;
+    padding-top: 200px;
     width: 100rem;
     height: 73rem;
 }
@@ -93,21 +91,38 @@ body {
       width: 100%;
     } 
   } 
-
   @media screen and (max-width: 768px) {
     /* For mobile phones: */
-   #logo {
+   .centerbuttons, h1 {
+    padding-left: 70px;
+   } 
+ } 
+/* 
+  @media screen and (max-width: 768px) { */
+    /* For mobile phones: */
+   /* #logo {
     width: 7.108in;
     height: 2in;
     margin: 0 auto;
-   } 
-}
+   }  */
+/* } */
 @media screen and (max-width: 768px) {
     /* For mobile phones: */
    #fireplace {
-    padding-top: 800px;
-    width:120%
+    padding-top: 170px;
+    width:120%;
+    padding-bottom: 200px;
    } 
+}
+
+@media screen and (max-width: 768px) {
+  #desc {
+    width: 87%;
+    margin: 0 auto;
+    text-align: center;
+    background-size: cover;
+    color: whitesmoke;
+}
 }
   /* @font-face {
     font-family: 'pantano_thingregular';
@@ -139,23 +154,58 @@ body {
 .hide{
     display: none;
 }
-#image{
-  
+.fa {
+  font-size: 50px;
+  cursor: pointer;
+  user-select: none;
+  color: darkred;
+  width: 10px;
 }
 .scare{
-    font-size: 5.5rem;
+    font-size: 4.3rem;
     text-align: center;
     margin: 0 auto;
-    font-family: 'Gloria Hallelujah', cursive;
-    text-decoration: underline;
+    text-decoration: wavy;
     padding-bottom: 3rem;
+    margin:40px;
+    font-family: 'Trade Winds', cursive;
+     /* font-family: 'Lacquer', sans-serif; */
+    /* font-family: 'Indie Flower', cursive;  */
 }
-
+.text {
+  padding-top: 15px;
+}
 #desc{
-width: 33%;
+width: 60%;
+height: 290px;
 margin: 0 auto;
 text-align: center;
-background-image: url("./images/red.jpg");
 background-size: cover;
 color: whitesmoke;
+}
+#col2 {
+    padding-bottom: 50%;
+    padding-top: 20%;
+    background-image: url("./images/footprints.gif");
+    background-position: 100px;
+    background-size: contain;
+    
+}
+.fa.fa-thumbs-up {
+  display: inline-block;
+  font: normal normal normal 10px FontAwesome;
+  font-size: 90%;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  padding-left: 10px;
+  -moz-osx-font-smoothing: grayscale;
+}
+img {
+  border-style: none;
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .scare {
+    font-size: 2.3rem;
+}
 }
