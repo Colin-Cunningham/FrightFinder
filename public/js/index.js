@@ -124,15 +124,20 @@ $(document).ready(function() {
       dataContainer.empty();
       for (var i = 0; i < response.length; i++) {
         var latlon = response[i].cur_lat + "," + response[i].cur_long;
-        var apiKey = "AIzaSyAH6XIzkCiAt0U8l0llfWf2QSOcE0oHAx4";
+        var apiKey = "hdfsjfdjhfdjhfhdhdj";
         var img_url =
           "https://maps.googleapis.com/maps/api/streetview?size=600x300&location=" +
           latlon +
           "&key=" +
           apiKey;
-        var img_url = "https://maps.googleapis.com/maps/api/streetview?size=600x300&location="+latlon+"&key="+ apiKey;
+        var img_url =
+          "https://maps.googleapis.com/maps/api/streetview?size=600x300&location=" +
+          latlon +
+          "&key=" +
+          apiKey;
         dataContainer.append(`<a class="name"><p class="scare" id="${response[i].id}" style="color: white">${response[i].location}<i id="thumbRating" class="fa fa-thumbs-up"></i></p></a>  
-   <div class="ui raised segment"id="desc"><img class="ui large left floated image"id="image" src="${img_url}"><p style="">${response[i].description}</p></div>`);
+   <div id="desc"><img id="image" src="${img_url}"><div class="text">
+   <p style="">${response[i].description}</p></div></div>`);
       }
     });
   }
