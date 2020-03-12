@@ -29,6 +29,25 @@ module.exports = function(app) {
         res.status(401).json(err);
       });
   });
+  app.post("/api/create", function(req, res) {
+    db.Spooky_spaces.create({
+      location: req.body.location,
+      country: "United States",
+      city: req.body.email,
+      state: req.body.state,
+      state_ab: "N/A",
+      description: req.body.description,
+      cur_lat: 42.962106,
+      cur_long: -85.504893,
+      city_lat: 42.96,
+      city_long: 42.1
+    }).then(function() {
+        res.json("cool!");
+      })
+      .catch(function(err) {
+        res.status(401).json(err);
+      });
+  });
 
   // Route for logging user out
   app.get("/logout", function(req, res) {
@@ -67,7 +86,6 @@ module.exports = function(app) {
     )
 
     }).then(function(dbSpooky) {
-      // We have access to the todos as an argument inside of the callback function
       console.log(dbSpooky);
       res.json(dbSpooky);
     });
@@ -86,4 +104,37 @@ module.exports = function(app) {
       });
     }
   });
+    
+  app.get("/api/chosen/:id", function(req, res) {
+    db.Spooky_spaces.findAll({
+      where: {
+        id: req.params.id
+      }
+    }).then(function(dbSpooky) {
+      console.log(dbSpooky)
+      for (var i = 0; i < dbSpooky.length; i++) {
+        var latlon = dbSpooky[i].cur_lat + "," + dbSpooky[i].cur_long;
+        var id= dbSpooky[i].id
+        var location= dbSpooky[i].location
+        var description= dbSpooky[i].description
+        var apiKey = process.env.APIKEY;
+        var img_url =
+          "https://maps.googleapis.com/maps/api/streetview?size=600x300&location=" +
+          latlon +
+          "&key=" +
+          apiKey;
+      }
+      const loop = {
+        "id": id,
+        "location": location,
+        "description": description,
+        "image": img_url
+      }
+      res.json(loop);
+    });
+  });
 };
+
+
+
+
