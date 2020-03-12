@@ -1,0 +1,17 @@
+h2 {
+    padding-top: 100px;
+    text-align: center;
+    font-size: 55px;
+}
+
+h4,h6 {
+    padding-top: 10px;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    font-family: 'Indie Flower', cursive;
+}
+
+.field {
+    color: white;
+}
