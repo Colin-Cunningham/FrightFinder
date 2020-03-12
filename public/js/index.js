@@ -83,7 +83,7 @@ $(document).ready(function() {
       console.log(response)
       var dataContainer = $("#col2");
       dataContainer.empty();
-        dataContainer.append(`<p class="scare" id="${response.id}" style="color: white"><a class="name" style="color: white">${response.location}</a><i id="thumbRating" class="fa fa-thumbs-up"></i></p>  
+      dataContainer.append(`<p class="scare" id="${response.id}" style="color: white"><a class="name" style="color: white">${response.location}</a><i id="thumbRating" class="fa fa-thumbs-up"></i></p>  
    <div id="desc"><img id="image" src="${response.image}"><div class="text">
    <p style="">${response.description}</p></div></div>`);
       
