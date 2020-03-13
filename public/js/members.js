@@ -7,17 +7,27 @@ $(document).ready(function() {
   $(document).on("click", "#add", addUser);
 
   function addUser(){
-     var location = $("#loca").val().trim();
-      var city = $("#cit").val().trim();
-      var state = $("#stat").val().trim();
-      var desc = $("#des").val().trim();
-     $.post("/api/create", {
+    var userData = {
+      location: $("#loca").val().trim(),
+      city: $("#cit").val().trim(),
+      state: $("#stat").val().trim(),
+      desc: $("#des").val().trim()
+    };
+  addLocation(userData.location, userData.city, userData.state, userData.desc)
+  }
+  function addLocation(location, city, state, description) {
+    $.post("/api/create", {
         location: location,
         city: city,
         state: state,
-        description: desc
-      }).then(function(response) {
-        console.log("you did it!")
+        description: description
+    })
+      .then(function() {
+        window.location.replace("/members");
+        // If there's an error, log the error
+      })
+      .catch(function(err) {
+        console.log(err);
       });
   }
  
