@@ -8,7 +8,7 @@ body {
   background-size: 1450px;
   background-position: top center !important;
   background-position: center center;
-  height: 2000px;
+  height: 500px;
   background-repeat: no-repeat;
   background-color: black;
   align-items: center;
@@ -59,7 +59,7 @@ body {
   width: 93%;
   height: auto;
 }
-h2,p,label {
+h1,p,label {
   font-family: 'Permanent Marker', cursive;
   color: white;
 }
