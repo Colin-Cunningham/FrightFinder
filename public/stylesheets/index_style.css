@@ -1,15 +1,16 @@
 body {
-    background-image: url("./images/background_gif.gif");
-    background-size: 1450px;
-    background-position: top center !important;
-    background-position: center center;
-    height: 2000px;
-    background-repeat: no-repeat;
-    background-color: black;
-    align-items: center;
-}  
+  background-image: url("./images/background_gif.gif");
+  background-size: 1450px;
+  background-position: top center !important;
+  background-position: center center;
+  height: 2000px;
+  background-repeat: no-repeat;
+  background-color: black;
+  align-items: center;
+}
+
 .navbar-header {
-    /* font-family: 'Trade Winds', cursive;
+  /* font-family: 'Trade Winds', cursive;
     font-family: 'Lacquer', sans-serif;
     font-family: 'Indie Flower', cursive;
     font-family: 'Fjalla One', sans-serif;
@@ -26,93 +27,100 @@ body {
     font-family: 'Rock Salt', cursive;
     font-family: 'Knewave', cursive;
     font-family: 'Love Ya Like A Sister', cursive;*/
-    font-family: 'Permanent Marker', cursive;
-    color: white;
-    
-} 
-.fa {
-    font-size: 50px;
-    cursor: pointer;
-    user-select: none;
-    color: orange;
-  }
-  .fa:hover {
-    color: white;
-  }
-  .navbar.navbar-default {
-    background-color: transparent;
-    border-color: transparent;
-}
-.navbar-default .navbar-brand {
-    color: white;
-    font-size: large;
-}
-.i.icon.video.play:before {
-    padding-left: 1080px;
-    color: white;
-    content: "\f144";
-}
-.ui.secondary.menu .item {
-    padding-top: 25px;
-    color: white;
-    font-family: 'Permanent Marker', cursive;
-}
-.ui.secondary.menu {
-    padding:15px;
-    font-size: 17px;
-}
-.responsive {
-    width: 93%;
-    height: auto;
- }
- i.icon:before {
-    color: aliceblue;
-  }
+  font-family: 'Permanent Marker', cursive;
+  color: white;
 
-#fireplace{
-    padding-top: 200px;
-    width: 100rem;
-    height: 73rem;
+}
+
+.fa {
+  font-size: 50px;
+  cursor: pointer;
+  user-select: none;
+  color: orange;
+}
+
+.fa:hover {
+  color: white;
+}
+
+.navbar.navbar-default {
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.navbar-default .navbar-brand {
+  color: white;
+  font-size: large;
+}
+
+.i.icon.video.play:before {
+  padding-left: 1080px;
+  color: white;
+  content: "\f144";
+}
+
+.ui.secondary.menu .item {
+  padding-top: 25px;
+  color: white;
+  font-family: 'Permanent Marker', cursive;
+}
+
+.ui.secondary.menu {
+  padding: 15px;
+  font-size: 17px;
+}
+
+.responsive {
+  width: 93%;
+  height: auto;
+}
+
+i.icon:before {
+  color: aliceblue;
+}
+
+#fireplace {
+  padding-top: 200px;
+  width: 100rem;
+  height: 73rem;
 }
 
 .centerbuttons {
-    margin: 0 auto;
-    text-align: center;
-    padding-right: 7.5rem ;
-  }
-  .ui.button {
-    font-family: 'Love Ya Like A Sister', cursive;
-    background-color: rgb(10, 10, 32);
-    color: aliceblue;
-  }
+  margin: 0 auto;
+  text-align: center;
+  padding-right: 7.5rem;
+}
+
+.ui.button {
+  font-family: 'Love Ya Like A Sister', cursive;
+  background-color: rgb(10, 10, 32);
+  color: aliceblue;
+}
+
 @media screen and (min-width: 768px) {
-     /* For mobile phones: */
-    .body {
-      width: 100%;
-    } 
-  } 
-  @media screen and (max-width: 768px) {
-    /* For mobile phones: */
-   .centerbuttons, h1 {
-    padding-left: 70px;
-   } 
- } 
-/* 
-  @media screen and (max-width: 768px) { */
-    /* For mobile phones: */
-   /* #logo {
-    width: 7.108in;
-    height: 2in;
-    margin: 0 auto;
-   }  */
-/* } */
+
+  /* For mobile phones: */
+  body {
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 768px) {
-    /* For mobile phones: */
-   #fireplace {
+
+  /* For mobile phones: */
+  .centerbuttons,
+  h1 {
+    padding-left: 70px;
+  }
+}
+@media screen and (max-width: 768px) {
+
+  /* For mobile phones: */
+  #fireplace {
     padding-top: 170px;
-    width:120%;
+    width: 120%;
     padding-bottom: 200px;
-   } 
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -122,38 +130,32 @@ body {
     text-align: center;
     background-size: cover;
     color: whitesmoke;
-}
-}
-  /* @font-face {
-    font-family: 'pantano_thingregular';
-    src: url('pantano_thing-webfont.woff2') format('woff2'),
-         url('pantano_thing-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-} */
-
-
-#dataContainer{
-    margin: 0 auto;
-
-    font-family: 'Fjalla One', sans-serif;
+  }
 }
 
-#header{
-    font-family: 'Love Ya Like A Sister', cursive;
-    color: whitesmoke;
-    text-align: center;
-    font-weight: 800;
-    padding-right: 7.5rem ;
+#dataContainer {
+  margin: 0 auto;
+
+  font-family: 'Fjalla One', sans-serif;
+}
+
+#header {
+  font-family: 'Love Ya Like A Sister', cursive;
+  color: whitesmoke;
+  text-align: center;
+  font-weight: 800;
+  padding-right: 7.5rem;
 
 }
-#bigDiv{
-    margin-bottom: 30rem;
+
+#bigDiv {
+  margin-bottom: 30rem;
 }
-.hide{
-    display: none;
+
+.hide {
+  display: none;
 }
+
 .fa {
   font-size: 50px;
   cursor: pointer;
@@ -161,36 +163,41 @@ body {
   color: darkred;
   width: 10px;
 }
-.scare{
-    font-size: 4.3rem;
-    text-align: center;
-    margin: 0 auto;
-    text-decoration: wavy;
-    padding-bottom: 3rem;
-    margin:40px;
-    font-family: 'Trade Winds', cursive;
-     /* font-family: 'Lacquer', sans-serif; */
-    /* font-family: 'Indie Flower', cursive;  */
+
+.scare {
+  font-size: 4.3rem;
+  text-align: center;
+  margin: 0 auto;
+  text-decoration: wavy;
+  padding-bottom: 3rem;
+  margin: 40px;
+  font-family: 'Trade Winds', cursive;
+  /* font-family: 'Lacquer', sans-serif; */
+  /* font-family: 'Indie Flower', cursive;  */
 }
+
 .text {
   padding-top: 15px;
 }
-#desc{
-width: 60%;
-height: 290px;
-margin: 0 auto;
-text-align: center;
-background-size: cover;
-color: whitesmoke;
+
+#desc {
+  width: 60%;
+  height: 290px;
+  margin: 0 auto;
+  text-align: center;
+  background-size: cover;
+  color: whitesmoke;
 }
+
 #col2 {
-    padding-bottom: 50%;
-    padding-top: 20%;
-    background-image: url("./images/footprints.gif");
-    background-position: 5px;
-    background-size: contain;
-    
+  padding-bottom: 50%;
+  padding-top: 20%;
+  background-image: url("./images/footprints.gif");
+  background-position: 5px;
+  background-size: contain;
+
 }
+
 .fa.fa-thumbs-up {
   display: inline-block;
   font: normal normal normal 10px FontAwesome;
@@ -200,15 +207,182 @@ color: whitesmoke;
   padding-left: 10px;
   -moz-osx-font-smoothing: grayscale;
 }
+
 img {
   border-style: none;
   width: 100%;
 }
+
 @media screen and (max-width: 768px) {
   .scare {
-    font-size: 2.3rem;}
-};
+    font-size: 2.3rem;
+  }
+}
+
+
 .about {
   color: azure;
   font-size: 300px;
+}
+
+.footer {
+  left: 0;
+  bottom: 0;
+  color: white;
+  text-align: center;
+  width: 100%;
+  padding-bottom: 235px;
+  margin: 0;
+  padding-top: 100px;
+  height: 10px;
+  font-size: 15px;
+
+}
+
+.ui.horizontal.segments {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  border-radius: 0;
+  padding: 0;
+  /* background-color: #fff; */
+  -webkit-box-shadow: 0 1px 2px 0 rgba(34, 36, 38, .15);
+  box-shadow: 0 1px 2px 0 rgba(34, 36, 38, .15);
+  margin: 1rem 0;
+  border-radius: .28571429rem;
+}
+
+.ui.horizontal.segments>.segment {
+  -webkit-box-flex: 1;
+  flex: 1 1 auto;
+  -ms-flex: 1 1 0px;
+  margin: 0;
+  min-width: 0;
+  background-color: transparent;
+  border-radius: 0;
+  border: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-left: 2px solid rgba(255, 255, 255, 0.21);
+}
+
+.ui.horizontal.segments {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  background-color: transparent;
+  border-radius: 0;
+  padding: 0;
+  /* background-color: #fff; */
+  -webkit-box-shadow: 0 1px 2px 0 rgba(34, 36, 38, .15);
+  box-shadow: 0 1px 2px 0 rgba(34, 36, 38, .15);
+  margin: 1rem 0;
+  border-radius: .28571429rem;
+  border: 1px solid rgba(34, 36, 38, .15);
+}
+
+.ui.segments:last-child {
+  margin-bottom: 0;
+}
+
+.ui.segments:first-child {
+  margin-top: 0;
+}
+
+.ui.segments {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative;
+  margin: 1rem 0;
+  border: 1px solid rgba(34, 36, 38, .15);
+  -webkit-box-shadow: 0 1px 2px 0 rgba(34, 36, 38, .15);
+  box-shadow: 0 1px 2px 0 rgba(34, 36, 38, .15);
+  border-radius: .28571429rem;
+}
+
+.logofooter {
+  width: 30%;
+  height: 5%;
+}
+
+.ui.link.list {
+  color: white;
+}
+
+.ui.link.list.list .item a:not(.ui):hover,
+.ui.link.list.list a.item:hover {
+  color: red
+}
+
+.ui.link.list .item,
+.ui.link.list .item a:not(.ui),
+.ui.link.list a.item {
+  color: beige;
+  -webkit-transition: .1s color ease;
+  transition: .1s color ease;
+}
+
+.copyright {
+  padding-top: 10px;
+  padding-bottom: 60px;
+  font-size: 80%;
+  color: gray;
+}
+
+.text {
+  padding-top: 45px;
+  font-size: 110%;
+  line-height: 1.6;
+}
+
+p:last-child {
+  margin-bottom: 0;
+  line-height: 2;
+}
+/* l */
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+  padding-bottom: 100px;
+}
+
+/* Top right text */
+#top-right {
+  position: absolute;
+  bottom: 100px;
+  left: 50px;
+  font-size: 75px;
+  padding-bottom: 620px;
+}
+#abouttext {
+  position: absolute;
+  font-size: 15px;
+  font-family: 'Fjalla One', sans-serif;
+
+}
+#aboutus {
+  color: white;
+  font-family: 'Permanent Marker', cursive;
+}
+
+
+@media screen and (max-width: 768px) {
+  #top-right {
+    position: absolute;
+    bottom: 100px;
+    left: 50px;
+    font-size: 75px;
+    padding-bottom: 852px;
+  }
 }

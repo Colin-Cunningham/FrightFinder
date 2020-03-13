@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Fright Finder!</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
-        <link src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-        crossorigin="anonymous">
-        <!-- Add icon library -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Bebas+Neue|BenchNine|Caveat|Fjalla+One|Gloria+Hallelujah|Homemade+Apple|Indie+Flower|Knewave|Lacquer|Love+Ya+Like+A+Sister|Patrick+Hand|Permanent+Marker|Righteous|Rock+Salt|Shadows+Into+Light|Special+Elite|Trade+Winds&display=swap" rel="stylesheet">
-        <link href="stylesheets/index_style.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    </head>
+
+<head>
+  <title>Fright Finder!</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+  <link src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
+  <!-- Add icon library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link
+    href="https://fonts.googleapis.com/css?family=Amatic+SC|Bebas+Neue|BenchNine|Caveat|Fjalla+One|Gloria+Hallelujah|Homemade+Apple|Indie+Flower|Knewave|Lacquer|Love+Ya+Like+A+Sister|Patrick+Hand|Permanent+Marker|Righteous|Rock+Salt|Shadows+Into+Light|Special+Elite|Trade+Winds&display=swap"
+    rel="stylesheet">
+  <link href="stylesheets/index_style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
 <body>
 
   <div class="ui secondary  menu">
@@ -32,11 +35,15 @@
       <a class="ui item" href="index.html">
         Logout
       </a>
-      <i class="play icon"></i>
+      <audio id="myAudio">
+        <source src="./stylesheets/audio/spookyaudio.mp3" type="audio/mpeg">
+      </audio>
+      <i onclick="playAudio()" type="button" class="play icon"></i>
+      <i onclick="pauseAudio()" type="button" class="pause icon"></i>
     </div>
   </div>
   <div id="bigDiv">
-      <img src="./stylesheets/images/title-02-02.png" alt="FrightFinder" id="logo" class="responsive">
+    <img src="./stylesheets/images/title-02-02.png" alt="FrightFinder" id="logo" class="responsive">
     <div class="centerbuttons">
       <div class="ui action input">
         <input id="input" type="text" placeholder="Search...">
@@ -44,7 +51,7 @@
       </div>
       <br>
       <br>
-      </select>      
+      </select>
       <div class="ui button" tabindex="0" id="current">
         Current
       </div>
@@ -52,28 +59,56 @@
         Random
       </button>
     </div>
-   <h1 id="header">Your Scare Awaits</h1>
-</div>
-</div>
-    
-    <div id="dataContainer" class="">
-      <div id="col2" class="column">
+    <h1 id="header">Your Scare Awaits</h1>
+  </div>
+  </div>
+  <div id="dataContainer" class="">
+    <div id="col2" class="column">
+    </div>
+  </div>
+  <div class="container">
+    <img src="./stylesheets/images/gif1.gif" alt="fireplace_intro" id="fireplace" class="responsive">
+    <div class="ui sizer vertical segment" id="top-right">
+      <div class="ui medium header" id="aboutus">About</div>
+      <div id="abouttext">
+      <p>Do you have the urge to subject yourself to the possibility of supernatural disturbances? Then this site is for
+        you, FrightFinder will help you discover the all the ancient burial grounds or walk with some ghosts.</p>
       </div>
     </div>
- 
-      <img src="./stylesheets/images/gif1.gif" alt="fireplace_intro" id="fireplace"class="responsive">
-      <!-- <img src="./stylesheets/images/gif2.gif" alt="fireplace_intro" id="fireplace"class="responsive"> -->
-      <!-- <p>Fright Finder</p> -->
-
-          <div class="row">
-            <div class="col-md-6 col-md-offset-3">
-              <h2><span class="member-name"></span></h2>
-            </div>
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3">
+        <h2><span class="member-name"></span></h2>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="ui horizontal segments">
+        <img src="./stylesheets/images/title-02-02.png" alt="FrightFinder" class="logofooter">
+        <div class="ui segment">
+          <h3>Contributions</h3>
+          <div class="ui link list">
+            <a href="https://ctobar09.github.io/Portfolio2/" class="item">Caro Tobar</a>
+            <a href="https://colin-cunningham.github.io/Cunningham-Portfolio/" class="item">Colin Cunningham</a>
+            <a href="https://github.com/jarrodfinn" class="item">Jarrod Finn</a>
+            <a href="https://dommidan.github.io/myportfolio/" class="item">Leticia Guerra</a>
           </div>
-       
-       
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
+        </div>
+        <div class="ui segment">
+          <h3>Menu</h3>
+          <div class="ui link list">
+            <a href="index.html" class="item">Home</a>
+            <a href="#" class="item">About</a>
+            <a href="signup.html" class="item">Sign-up</a>
+            <a href="login.html" class="item">Login</a>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright @2020 FrightFinder</p>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
 </body>
+
 </html>

@@ -86,8 +86,16 @@ $(document).ready(function() {
       dataContainer.append(`<p class="scare" id="${response.id}" style="color: white"><a class="name" style="color: white">${response.location}</a><i id="thumbRating" class="fa fa-thumbs-up"></i></p>  
    <div id="desc"><img id="image" src="${response.image}"><div class="text">
    <p style="">${response.description}</p></div></div>`);
-      
     });
   }
-
 });
+
+var x = document.getElementById("myAudio");
+
+function playAudio() {
+  x.play();
+}
+
+function pauseAudio() {
+  x.pause();
+}
