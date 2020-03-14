@@ -2,6 +2,8 @@ h2 {
     padding-top: 100px;
     text-align: center;
     font-size: 55px;
+    color: white;
+    font-family:'Permanent Marker', cursive;
 }
 
 h4,h6 {
@@ -14,4 +16,89 @@ h4,h6 {
 
 .field {
     color: white;
+}
+
+form.signup,
+form.login {
+  margin-top: 50px;
+}
+
+body {
+  background-image: url("./images/background_gif.gif");
+  background-size: 1450px;
+  background-position: top center !important;
+  background-position: center center;
+  height: 1100px;
+  background-repeat: no-repeat;
+  background-color: black;
+  align-items: center;
+}  
+.navbar-header {
+  /* font-family: 'Trade Winds', cursive;
+  font-family: 'Lacquer', sans-serif;
+  font-family: 'Indie Flower', cursive;
+  font-family: 'Fjalla One', sans-serif;
+  font-family: 'Shadows Into Light', cursive;
+  font-family: 'Righteous', cursive;
+  font-family: 'Amatic SC', cursive;
+  font-family: 'Caveat', cursive;
+  font-family: 'Patrick Hand', cursive;
+  font-family: 'Gloria Hallelujah', cursive;
+  font-family: 'BenchNine', sans-serif;
+  font-family: 'Special Elite', cursive;
+  font-family: 'Bebas Neue', cursive;
+  font-family: 'Homemade Apple', cursive;
+  font-family: 'Rock Salt', cursive;
+  font-family: 'Knewave', cursive;
+  font-family: 'Love Ya Like A Sister', cursive;*/
+  font-family: 'Permanent Marker', cursive;
+  color: white;
+  
+} 
+.navbar.navbar-default {
+  background-color: transparent;
+  border-color: transparent;
+}
+.navbar-default .navbar-brand {
+  color: white;
+  font-size: large;
+}
+
+
+.ui.secondary.menu .item {
+  padding-top: 25px;
+  color: white;
+  font-family: 'Permanent Marker', cursive;
+}
+
+.ui.secondary.menu {
+  padding:15px;
+  font-size: 17px;
+}
+.responsive {
+  width: 93%;
+  height: auto;
+}
+h1,p,label {
+  font-family: 'Permanent Marker', cursive;
+  color: white;
+}
+/* img {
+  width: 14.108in;
+  height: 4in;
+} */
+@media screen and (min-width: 768px) {
+   /* For mobile phones: */
+  .body {
+    width: 100%;
+  } 
+} 
+
+@media screen and (max-width: 768px) {
+  /* For mobile phones: */
+ #logo {
+  width: 7.108in;
+  height: 2in;
+  margin: 0 auto;
+ } 
 }
